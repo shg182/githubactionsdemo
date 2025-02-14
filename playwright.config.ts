@@ -19,10 +19,10 @@ export default defineConfig({
   // Folder for test artifacts such as screenshots, videos, traces, etc.
   outputDir: 'test-results',
 
-   // Each test is given 30 seconds.
-   timeout: 30000,
+  // Each test is given 30 seconds.
+  timeout: 30000,
   /* Run tests in files in parallel */
-    fullyParallel: true,
+  fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
@@ -34,29 +34,29 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: 'https://the-internet.herokuapp.com',
+    baseURL: 'https://www.saucedemo.com/',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
-    headless:false,
+    headless: false,
     screenshot: 'only-on-failure',
     video: 'on',
-      // Emulates `'prefers-colors-scheme'` media feature.
+    // Emulates `'prefers-colors-scheme'` media feature.
     colorScheme: 'dark',
-     // Viewport used for all pages in the context.
-     viewport: { width: 1280, height: 720 },
+    // Viewport used for all pages in the context.
+    viewport: { width: 1280, height: 720 },
 
-      // Whether to automatically download all the attachments.
+    // Whether to automatically download all the attachments.
     acceptDownloads: false,
 
   },
 
   /* Configure projects for major browsers */
   projects: [
-    // {
-    //   name: 'chromium',
-    //   use: { ...devices['Desktop Chrome'] },
-    // },
+    {
+      name: 'chromium',
+      use: { ...devices['Desktop Chrome'] },
+    },
 
     // {
     //   name: 'firefox',
@@ -69,14 +69,14 @@ export default defineConfig({
     // },
 
     /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'] },
-    // },
-    {
+    /* {
+      name: 'Mobile Chrome',
+      use: { ...devices['Pixel 5'] },
+    }, */
+    /* {
       name: 'Mobile Safari',
       use: { ...devices['iPhone 12'] },
-    },
+    }, */
 
     /* Test against branded browsers. */
     // {
