@@ -20,7 +20,7 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       - name: Run Playwright tests
-        run: npx Playwright tests
+        run: npx playwright tests
       - name: Send Email
         uses: dawidd6/action-send-mail@v3
         with:
