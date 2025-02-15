@@ -31,11 +31,11 @@ jobs:
           subject: Test Automation Report
           body: |
               Hi, 
-              Please find below the link for Fusion 3.0 Dashboard Test Automation Report
+              Please find below the link for Test Automation Report
 
               https://google.com/
 
               Best Regards
                 Shweta
-          to:  
+          to:  shg182@gmail.com
           from: ${{ secrets.AUTOMATION_EMAIL_USERNAME }}
