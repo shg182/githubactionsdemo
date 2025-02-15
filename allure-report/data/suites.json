@@ -1,0 +1,26 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "chromium",
+    "children" : [ {
+      "name" : "saucedemo.spec.ts",
+      "children" : [ {
+        "name" : "test",
+        "uid" : "4085ed672b53ce57",
+        "parentUid" : "1eae74c78d4c7925dafa03f68594a30a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1739600344127,
+          "stop" : 1739600344792,
+          "duration" : 665
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chromium" ]
+      } ],
+      "uid" : "1eae74c78d4c7925dafa03f68594a30a"
+    } ],
+    "uid" : "36c900977e1d8b81a2c6893cc82bfc01"
+  } ]
+}

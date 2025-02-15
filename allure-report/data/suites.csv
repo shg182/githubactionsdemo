@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Feb 15 11:49:04 IST 2025","Sat Feb 15 11:49:04 IST 2025","665","chromium","saucedemo.spec.ts","","","","test",""
